@@ -25,6 +25,7 @@ class ClientArea {
             this.contentArea.innerHTML = response.data
         })
         .catch(() => {
+            console.log("Houston, we have a problem!")
             this.contentArea.innerHTML = `
             <p class="client-area__error>
                 That secret phrase is not correct. Try again.
